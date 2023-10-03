@@ -14,6 +14,11 @@ These are the characteristics of the mainland Spain grid:
     lon = 620;
     lat = 375;
     time = UNLIMITED;
+* spatial resolution: 0.025;
+* origin:
+    lon = -10.3;
+    lat = 43;
+    time = 1;
 * double lon(lon=620);
   :units = "degrees_east";
   :long_name = "longitude";
@@ -28,13 +33,11 @@ These are the characteristics of the mainland Spain grid:
   :axis = "Y";
   :comment = "Latitude geographical coordinates, WGS84 projection";
   :reference_datum = "geographical coordinates, WGS84 projection";
-* double lat(lat=375);
-  :units = "degrees_north";
-  :long_name = "latitude";
-  :standard_name = "latitude";
-  :axis = "Y";
-  :comment = "Latitude geographical coordinates, WGS84 projection";
-  :reference_datum = "geographical coordinates, WGS84 projection";
+* double time(time=1);
+      :units = "days since 1900-01-01";
+      :long_name = "time";
+      :calendar = "gregorian";
+      :axis = "T";
 * int crs;
   :long_name = "CRS definition";
   :grid_mapping_name = "latitude_longitude";
@@ -49,6 +52,11 @@ These are the characteristics of the Canary Islands grid:
     lon = 212;
     lat = 84;
     time = UNLIMITED
+* spatial resolution: 0.025;
+* origin:
+    lon = -18.425;
+    lat = 29.525;
+    time = 1;
 * double lon(lon=212);
   :units = "degrees_east";
   :long_name = "longitude";
